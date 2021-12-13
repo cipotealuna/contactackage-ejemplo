@@ -1,0 +1,19 @@
+{
+    "name": "alunacomando/contact",
+    "description": "a traves de un comando generar una aplicacion de contabilidad",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "cipotealuna",
+            "email": "aluna@ibermedia.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Ibermedia\\Contact\\": "src/"
+        }
+    }
+}
