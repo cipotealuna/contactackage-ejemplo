@@ -22,6 +22,7 @@ class ContactServiceProvider extends ServiceProvider
     public function register()
     {
 
+$this->app->make('Ibermedia\Contact\Http\ContactController');
 
     }
 }
