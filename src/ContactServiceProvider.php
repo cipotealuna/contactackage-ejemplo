@@ -13,6 +13,7 @@ class ContactServiceProvider extends ServiceProvider
       $this->loadMigrationsFrom(__DIR__.'/database/migrations','contact');
 
 
+    
       //CONTROLADORES
       $this->publishes([__DIR__.'/Http/Controllers' => app_path('Http/Controllers')],'contact');
 
@@ -20,11 +21,15 @@ class ContactServiceProvider extends ServiceProvider
       $this->publishes([__DIR__.'/Models' => app_path('Http/Models')],'contact');
 
       //VISTAS
-      $this->publishes([__DIR__.'/views' => app_path('/resources/views')],'contact');
+      $this->publishes([__DIR__.'/views' => base_path('/resources/views')],'contact');
 
       //MIGRACIONES
       $this->publishes([__DIR__.'/database/migrations' => base_path('/database/migrations')],'contact');
 
+      //RUTAS
+      $this->publishes([__DIR__.'/routes' => base_path('/routes')],'contact');
+
+     
      
     }
 
